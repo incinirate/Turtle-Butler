@@ -79,9 +79,7 @@ function parseDatabaseToTable(name)
             table.insert(workingTable[#workingTable],value)
             rowBytesRead = rowBytesRead + columnBytes[columnOn]
             columnOn = columnOn + 1
-            nextB()
         end
-        nextB()
     end
     handle.close()
     return workingTable    
